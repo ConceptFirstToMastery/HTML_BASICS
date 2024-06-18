@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="HTML Elements; Inline and Block" />
+    <meta name="author" content="Olaoluwa Ibukun" />
+    <title>HTML Elements; Inline and Block</title>
+    <link rel="Stylesheet" src="" />
+    <script src=""></script>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        background-color: #3498db;
+        color: #fff;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 4px;
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #2c3e50;
+      }
+
+      .project-image {
+        margin-top: 20px;
+      }
+
+      .project-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Elements; Inline and Block</h1>
+    </header>
+    <!-- About Me -->
+    <section class="about-me">
+      <h2>About Me</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sit
+        laboriosam earum iure dolor. Dolor itaque natus id, architecto cum
+        consequatur ea, vel iure, necessitatibus adipisci saepe numquam ipsum
+        culpa.
+      </p>
+    </section>
+    <!-- End of About me -->
+
+    <!-- Skills -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JAVASCRIPT</li>
+        <li>PYTHON</li>
+        <li>NODEJS</li>
+      </ul>
+    </section>
+    <!-- End of skills -->
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project 1: Online Portfolio Website</h3>
+        <p>
+          Designed and developed a personal portfolio website showcasing my
+          skills, projects, and contact information. Implemented responsive
+          design for optimal viewing on various devices.
+        </p>
+
+        <div class="project-image">
+          <img src="./assets/port-site.png" alt="Online Portfolio Website" />
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Project 2: E-commerce Platform</h3>
+        <p>
+          Created an e-commerce platform with user authentication, product
+          catalog, and shopping cart functionality. Integrated secure payment
+          gateways for seamless online transactions.
+        </p>
+
+        <div class="project-image">
+          <img src="./assets/ecom.png" alt="Online Portfolio Website" />
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Project 3: Data Analysis Dashboard</h3>
+        <p>
+          Developed a data analysis dashboard using Python and visualization
+          libraries. The dashboard provides insights into key performance
+          metrics, helping businesses make informed decisions.
+        </p>
+
+        <div class="project-image">
+          <img
+            src="./assets/data-analytic.png"
+            alt="Online Portfolio Website"
+          />
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Project 4: Mobile App Development</h3>
+        <p>
+          Collaborated on a team project to build a mobile application for task
+          management. The app features real-time collaboration, task
+          prioritization, and notification alerts for enhanced productivity.
+        </p>
+
+        <div class="project-image">
+          <img src="./assets/mobile-app.png" alt="Online Portfolio Website" />
+        </div>
+      </div>
+    </section>
+    <!-- End of porjects -->
+
+    <!-- contact -->
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to reach out to me! You can contact me via email at
+        <a href="mailto:yourmail@gmail.com">your@email.com</a> or connect with
+        me on LinkedIn:
+        <a href="https://yourLinkedinprofile">Your LinkedIn Profile</a>.
+      </p>
+    </section>
+    <!-- end of contact -->
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; GCOM; 2024</p>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>
