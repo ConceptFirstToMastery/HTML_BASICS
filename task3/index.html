@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn to work with media Elements</title>
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 20px;
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.1);
+      }
+
+      .video-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+      }
+
+      .video-gallery video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .video-gallery video:hover {
+        transform: scale(1.1);
+      }
+      figure {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Working with Multimedia Elements</h1>
+    <section>
+      <h2>Image Gallery</h2>
+
+      <div class="image-gallery">
+        <img
+          src="./assets/BBQ-pulled-pork-sandwich.png"
+          alt="image-1"
+          loading="lazy"
+        />
+        <img src="./assets/beef-tacos.png" alt="image-2" loading="lazy" />
+        <img src="./assets/caesar-salad.png" alt="image-2" loading="lazy" />
+        <img
+          src="./assets/fresh-beef-burger.png"
+          alt="Image 1"
+          loading="lazy"
+        />
+        <img src="./assets/margherita-pizza.png" alt="Image 2" loading="lazy" />
+        <img src="./assets/sushi-platter.png" alt="Image 3" loading="lazy" />
+        <img
+          src="./assets/vegetable-stir-fry.png"
+          alt="Image 2"
+          loading="lazy"
+        />
+        <img src="./assets/beef-tacos.png" alt="image-2" loading="lazy" />
+
+        <figure>
+          <img src="./assets/caesar-salad.png" alt="image-2" loading="lazy" />
+          <figcaption>Ceasar salad</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Video Gallery</h2>
+      <div class="video-gallery">
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/camera.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/coding.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/dna.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/drone.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/media.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/record.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/street_light.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/camera.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/coding.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/dna.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/drone.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/media.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/record.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/street_light.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/camera.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/coding.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          controls
+          autoplay
+          muted
+          poster="./assets/HTML5 media elements.png"
+        >
+          <source src="./assets/vid/dna.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <figure>
+          <video
+            controls
+            autoplay
+            muted
+            poster="./assets/HTML5 media elements.png"
+          >
+            <source src="./assets/vid/dna.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Learn to write code</figcaption>
+        </figure>
+      </div>
+    </section>
+  </body>
+</html>
