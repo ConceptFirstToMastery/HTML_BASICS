@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Working with Tables</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table > caption {
+        font-size: 3rem;
+        margin: 15px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:hover {
+        background-color: rgb(105, 105, 167);
+        color: #ffffff;
+      }
+
+      .processing {
+        color: purple;
+      }
+
+      .delivered {
+        color: green;
+      }
+      .cancelled {
+        color: rgb(136, 32, 32);
+      }
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Orders Product table
+      </caption>
+      <!-- headers -->
+      <tr>
+        <th>Order ID</th>
+        <th>Product Name</th>
+        <th>Product Photo</th>
+        <th>Customer</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Order Date</th>
+        <th>Status</th>
+      </tr>
+
+      <!-- table data -->
+      <tr>
+        <td>001</td>
+        <td>Smartphone</td>
+        <td><img src="./assets/smartphone.png" alt="Smartphone" /></td>
+        <td>John Smith</td>
+        <td>2</td>
+        <td>$500</td>
+        <td>$1000</td>
+        <td>2024-07-15</td>
+        <td class="processing">processing</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Laptop</td>
+        <td><img src="./assets/laptop.png" alt="Laptop" /></td>
+        <td>Bayo Smith</td>
+        <td>1</td>
+        <td>$1200</td>
+        <td>$1200</td>
+        <td>2024-07-16</td>
+        <td class="delivered">delivered</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Headphones</td>
+        <td><img src="./assets/headphone.png" alt="Headphones" /></td>
+        <td>John Badru</td>
+        <td>3</td>
+        <td>$150</td>
+        <td>$450</td>
+        <td>2024-07-16</td>
+        <td class="processing">processing</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>Tablet</td>
+        <td><img src="./assets/tablet.png" alt="Tablet" /></td>
+        <td>Ayo Johnson</td>
+        <td>4</td>
+        <td>$300</td>
+        <td>$1200</td>
+        <td>2024-07-17</td>
+        <td class="delivered">delivered</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>Smartwatch</td>
+        <td><img src="./assets/smartwatch.png" alt="Smartwatch" /></td>
+        <td>Abigail Smith</td>
+        <td>2</td>
+        <td>$200</td>
+        <td>$400</td>
+        <td>2024-07-17</td>
+        <td class="processing">processing</td>
+      </tr>
+      <tr>
+        <td>006</td>
+        <td>Camera</td>
+        <td><img src="./assets//camera.png" alt="Camera" /></td>
+        <td>Jerry Bayode</td>
+        <td>1</td>
+        <td>$700</td>
+        <td>$700</td>
+        <td>2024-07-18</td>
+        <td class="cancelled">cancelled</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td>Printer</td>
+        <td><img src="./assets/printer.png" alt="Printer" /></td>
+        <td>Cynthia Adegbola</td>
+        <td>2</td>
+        <td>$150</td>
+        <td>$300</td>
+        <td>2024-07-18</td>
+        <td class="cancelled">cancelled</td>
+      </tr>
+      <tr>
+        <td>008</td>
+        <td>Keyboard</td>
+        <td><img src="./assets/keyboard.png" alt="Keyboard" /></td>
+        <td>Bolanle Grace</td>
+        <td>5</td>
+        <td>$50</td>
+        <td>$250</td>
+        <td>2024-07-19</td>
+        <td>processing</td>
+      </tr>
+      <tr>
+        <td>009</td>
+        <td>Mouse</td>
+        <td><img src="./assets/mouse.png" alt="Mouse" /></td>
+        <td>Olaoluwa Ibukun</td>
+        <td>5</td>
+        <td>$40</td>
+        <td>$200</td>
+        <td>2024-07-19</td>
+        <td class="processing">processing</td>
+      </tr>
+      <tr>
+        <td>010</td>
+        <td>Monitor</td>
+        <td><img src="./assets/monitor.png" alt="Monitor" /></td>
+        <td>Eunice Adegoke</td>
+        <td>2</td>
+        <td>$250</td>
+        <td>$500</td>
+        <td>2024-07-20</td>
+        <td class="processing">processing</td>
+      </tr>
+    </table>
+  </body>
+</html>
